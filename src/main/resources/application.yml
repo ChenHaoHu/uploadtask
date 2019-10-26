@@ -1,0 +1,14 @@
+spring:
+
+  jpa:
+
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://120.78.174.107:3306/gotest
+    username: hcy
+    password: hcy
+
