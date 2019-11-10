@@ -4,6 +4,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import top.hcy.uploadtask.entity.Task;
 
+import java.util.List;
+
 /**
  * @ClassName: TaskMapper
  * @Author: hcy
@@ -13,4 +15,6 @@ import top.hcy.uploadtask.entity.Task;
  **/
 @Repository
 public interface TaskMapper  extends JpaRepository<Task,Integer> {
+
+        List<Task> findTaskByAuthorAndPasswd(String author,String passwd);
 }

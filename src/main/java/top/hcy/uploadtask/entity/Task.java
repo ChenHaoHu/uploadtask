@@ -31,7 +31,14 @@ public class Task {
 
     String taskName;
 
-    String taskUrl;
+    String author;
+
+    String desct;
+
+    String passwd;
+
+    @Temporal(TemporalType.TIMESTAMP)
+    Date endTime;
 
     @Temporal(TemporalType.TIMESTAMP)
     @Column(updatable = false)
@@ -42,5 +49,7 @@ public class Task {
     @Temporal(TemporalType.TIMESTAMP)
     Date modifeTime;
 
-    String author;
+
+
+
 }

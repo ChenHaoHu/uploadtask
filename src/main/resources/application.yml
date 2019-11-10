@@ -1,7 +1,5 @@
 spring:
-
   jpa:
-
     database: mysql
     show-sql: true
     hibernate:
@@ -11,4 +9,16 @@ spring:
     url: jdbc:mysql://120.78.174.107:3306/gotest
     username: hcy
     password: hcy
+  servlet:
+    multipart:
+      max-file-size: 20MB
+  thymeleaf:
+    cache: false
+logging:
+  level:
+    org.springframework.web.HttpLogging : debug
 
+
+server:
+  tomcat:
+    basedir: /www/uploadtask/tmp
